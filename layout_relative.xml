@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/view5"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#101010"
+        android:layout_centerInParent="true"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#A73939"
+        android:layout_toLeftOf="@+id/view5"
+        android:layout_above="@+id/view5"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#346195"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/view5"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#E76E6E"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/view5"
+        android:layout_above="@+id/view5"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#AC2EB7"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/view5"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#43EEC6"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@+id/view5"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#97F806"
+        android:layout_toLeftOf="@+id/view5"
+        android:layout_below="@+id/view5"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#E47BBD"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/view5"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#101010"
+        android:layout_toRightOf="@+id/view5"
+        android:layout_below="@+id/view5"/>
+
+</RelativeLayout>

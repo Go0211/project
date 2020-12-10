@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/refresh"
+        android:title="새로고침"
+        android:icon="@drawable/reload"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/setting"
+        android:title="아이콘"
+        android:icon="@drawable/settings"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/copy"
+        android:title="복사하기"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/share"
+        android:title="공유하기"
+        app:showAsAction="never"/>
+</menu>

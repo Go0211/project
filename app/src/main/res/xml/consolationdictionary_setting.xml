@@ -1,35 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:key="changeKey2">
     <PreferenceCategory android:title="메시지 알림">
-        <SwitchPreference
+        <SwitchPreferenceCompat
             android:key="message"
-            android:title="메시지 알림"/>
+            android:title="메시지 알림">
+        </SwitchPreferenceCompat>
+    </PreferenceCategory>
 
         //11일에 제대로 파악 후 제작
+    <PreferenceCategory android:title="키워드 설정">
         <PreferenceScreen
             android:key="keyword_screen"
             android:title="키워드 알림"
             android:summary="사용안함">
-            <SwitchPreference
-                android:defaultValue="false"
-                android:key="keyword"
-                android:summary="등록된 키워드가 포함된 메시지는 채팅방 알림이 꺼져 있어도 푸시 알림을 받게 되어 키워드는 강조되어 보여 집니다."
-                android:title="키워드 알림"/>
-            <ListPreference
-                android:key="keyword_sound_list"
-                android:summary="카톡"
-                android:title="키워드 전용 알림음"
-                android:dependency="keyword"/>
         </PreferenceScreen>
+    </PreferenceCategory>
 
-        <SwitchPreference
+    <PreferenceCategory android:title="소리 설정">
+        <SwitchPreferenceCompat
             android:key="sound"
-            android:title="소리"/>
+            android:title="소리">
+        </SwitchPreferenceCompat>
 
         <ListPreference
             android:key="sound_list"
-            android:summary="카톡"
-            android:title="알림음음"/>
+            android:summary="알림음을 선택해주세요"
+            android:title="알림음"
+            android:entries="@array/sounds"
+            android:entryValues="@array/sounds"
+            android:dependency="sound">
+        </ListPreference>
     </PreferenceCategory>
 
+    <PreferenceCategory android:title="기타">
+        <Preference
+            app:key="officialSite"
+            app:title="공식사이트">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="http://www.google.com" />
+        </Preference>
+    </PreferenceCategory>
 </PreferenceScreen>

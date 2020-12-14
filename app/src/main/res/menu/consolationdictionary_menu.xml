@@ -16,9 +16,22 @@
     <item
         android:id="@+id/copy"
         android:title="복사하기"
-        app:showAsAction="never"/>
+        android:icon="@drawable/copy"
+        app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/share"
         android:title="공유하기"
-        app:showAsAction="never"/>
+        android:icon="@drawable/share"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/download"
+        android:title="다운하기"
+        android:icon="@drawable/download"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/customerService"
+        android:title="고객센터"
+        android:icon="@drawable/monitor"
+        app:showAsAction="ifRoom"/>
+
 </menu>

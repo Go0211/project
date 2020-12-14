@@ -3,6 +3,18 @@
     <string name="actionBar_consolationDictionary">메뉴</string>
     <string name="title_activity_settings">SettingsActivity</string>
 
+    <!--    snackBar-->
+    <string name="downloadSnackBar">Download</string>
+    <string name="copyToast">클립보드에 복사가 되었습니다.</string>
+
+    <!--    notification message-->
+    <string name="todayNotificationTitle">오늘 힘들었죠?</string>
+    <string name="todayNotificationContent">여기서 힐링하고 가세요</string>
+    <string name="downloadNotification">다운로드 중</string>
+
+    <!--    test-->
+    <string name="test">test</string>
+
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>
